@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="/src/main.ts"></script>
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <h1>Honkai: Star Rail - Navigation Compass Solver</h1>
+    <table>
+      <tr>
+        <th></th>
+        <th>Wheel 1</th>
+        <th>Wheel 2</th>
+        <th>Wheel 3</th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>Staring Position</td>
+          <td>
+            <select id="first-wheel-start">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </td>
+          <td>
+            <select id="second-wheel-start">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </td>
+          <td>
+            <select id="third-wheel-start">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Turn Direction</td>
+          <td>
+            <select id="first-wheel-direction">
+              <option value="left">Left</option>
+              <option value="right">Right</option>
+            </select>
+          </td>
+          <td>
+            <select id="second-wheel-direction">
+              <option value="left">Left</option>
+              <option value="right">Right</option>
+            </select>
+          </td>
+          <td>
+            <select id="third-wheel-direction">
+              <option value="left">Left</option>
+              <option value="right">Right</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Turn Distance</td>
+          <td>
+            <select id="first-wheel-distance">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </td>
+          <td>
+            <select id="second-wheel-distance">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </td>
+          <td>
+            <select id="third-wheel-distance">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tr>
+        <td></td>
+        <td>Set 1</td>
+        <td>Set 2</td>
+        <td>Set 3</td>
+      </tr>
+      <tr>
+        <td>Outer</td>
+        <td>
+          <input type="checkbox" id="first-set-outer" />
+        </td>
+        <td>
+          <input type="checkbox" id="second-set-outer" />
+        </td>
+        <td>
+          <input type="checkbox" id="third-set-outer" />
+        </td>
+      </tr>
+      <tr>
+        <td>Middle</td>
+        <td>
+          <input type="checkbox" id="first-set-middle" />
+        </td>
+        <td>
+          <input type="checkbox" id="second-set-middle" />
+        </td>
+        <td>
+          <input type="checkbox" id="third-set-middle" />
+        </td>
+      </tr>
+      <tr>
+        <td>Inner</td>
+        <td>
+          <input type="checkbox" id="first-set-inner" />
+        </td>
+        <td>
+          <input type="checkbox" id="second-set-inner" />
+        </td>
+        <td>
+          <input type="checkbox" id="third-set-inner" />
+        </td>
+      </tr>
+      <tr>
+        <td>Solution</td>
+        <td>
+          <span id="first-set-solution"> x </span>
+        </td>
+        <td>
+          <span id="second-set-solution"> x </span>
+        </td>
+        <td>
+          <span id="third-set-solution"> x </span>
+        </td>
+      </tr>
+    </table>
+
+    <button id="solve-button">Calculate Solution</button>
+  </body>
+</html>
